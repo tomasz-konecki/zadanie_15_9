@@ -54,7 +54,8 @@ class App extends React.Component {
             .then(response => response.json())
             .then(responseJson => this.setState({
                 users: responseJson.items
-            }));
+            }))
+            .catch(console.log('Something went wrong...'));
     }
 
     render() {
