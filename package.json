@@ -1,11 +1,11 @@
 {
   "name": "zadanie_15_9",
   "version": "1.0.0",
-  "description": "Wyszukiwarka użytkowników na Githubie",
+  "description": "Wyszukiwarka uzytkownikow Github",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server"
+    "build": "babel js/script.js --watch --out-file js/build.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/tomasz-konecki/zadanie_15_9#readme",
   "dependencies": {
-    "http-server": "^0.10.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
   }
 }
